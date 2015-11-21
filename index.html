@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+  <title></title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700,700italic&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+      <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+     
+    <!--  jQuery 2.1+  -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="owl-carousel/owl.carousel.js"></script>
+</head>
+<body>
+
+<header class="page-header">
+
+  <div class="page-header__inner container">
+
+      <div class="row">
+        <div class="col-xs-offset-1 col-xs-10 col-lg-2 col-lg-offset-0">
+          <a href="" class="main-logo"><img src="" alt=""><h1>Green Valley</h1></a>
+        </div>
+
+        <div class="col-xs-1 hidden-lg">
+          <div class="gamburger">gumb</div>
+        </div>
+        
+            <div class="col-lg-5 visible-lg">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><a href="" class="main-nav__link">Номера</a></li>
+                  <li class="main-nav__item"><a href="" class="main-nav__link">Коттедж</a></li>
+                  <li class="main-nav__item"><a href="" class="main-nav__link">Ресторан</a></li>
+                  <li class="main-nav__item"><a href="" class="main-nav__link">Отдых</a></li>
+                  <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+        
+            <div class="col-lg-3 visible-lg">
+              <div class="page-header__contacts"><b class="page-header__phone">+7 812 777-55-88</b><br> г. Санкт-Петербург, Приморское ш.600</div>
+            </div>
+        
+            <div class="col-lg-2 visible-lg">
+              <a href="" class="btn btn-header">Забронировать</a>
+            </div>
+      </div>
+
+  </div>
+
+</header>
+
+
+
+    <div id="owl-demo" class="owl-carousel owl-theme">
+     
+      <div class="item">
+        <article class="promo-slider__slide">
+          <div class="promo-slider__text container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-10 col-xs-12">
+                <h1 class="promo-slider__slide-title">Семейный отдых на  берегу Финского залива</h1>
+                <p class="promo-slider__slide-text">Green Valley - это современная база отдыха
+                  в курортном районе для здорового отдыха всей семёй.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+      <div class="item">
+        <article class="promo-slider__slide">
+          <div class="promo-slider__text container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-10 col-xs-12">
+                <h1 class="promo-slider__slide-title">Корпоративный</h1>
+                <p class="promo-slider__slide-text">Green Valley - это современная база отдыха
+                  в курортном районе для здорового отдыха всей семёй.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+     
+    </div>
+
+
+   <ul class="promo-slider__paginator owl-pagination">
+      <li class="owl-page"><a >Семейный отдых</a></li>
+      <li class="owl-page"><a >Корпоративный</a></li>
+    </ul>
+
+    <script>
+
+
+    $(document).ready(function() {
+     
+      $("#owl-demo").owlCarousel({
+     
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 300,
+          paginationSpeed : 400,
+          singleItem:true
+     
+          // "singleItem:true" is a shortcut for:
+          // items : 1, 
+          // itemsDesktop : false,
+          // itemsDesktopSmall : false,
+          // itemsTablet: false,
+          // itemsMobile : false
+     
+      });
+     
+    });
+
+</script>
+
+
+
+  <section class="promo-slider">
+
+    <div class="promo-slider__wrapper">
+
+        <article class="promo-slider__slide">
+          <div class="promo-slider__text container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-10 col-xs-12">
+                <h1 class="promo-slider__slide-title">Семейный отдых на  берегу Финского залива</h1>
+                <p class="promo-slider__slide-text">Green Valley - это современная база отдыха
+                  в курортном районе для здорового отдыха всей семёй.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="promo-slider__slide">
+          <div class="promo-slider__text container">
+            <div class="row">
+              <div class="col-lg-6 col-sm-10 col-xs-12">
+                <h1 class="promo-slider__slide-title">Корпоративный</h1>
+                <p class="promo-slider__slide-text">Green Valley - это современная база отдыха
+                  в курортном районе для здорового отдыха всей семёй.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+    </div>
+
+    <ul class="promo-slider__paginator">
+      <li class="owl-prev"><a href="">Семейный отдых</a></li>
+      <li class="owl-next"><a href="">Корпоративный</a></li>
+    </ul>
+
+  </section>
+
+  <section class="rest">
+
+        <div class="rest__inner container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-10 col-xs-10">
+              <h1>Здоровый отдых</h1>
+                <p>Плавайте в бассейне, играйте в волейбол, футбол и другие игры. Устройте семейный пикник с шашлыками или снимите напряжение в бане или спа. Почувствуйте отдых!</p>
+            </div>
+              <div class="col-lg-8 col-sm-10 hidden-xs">
+                <ul class="rest-list">
+                  <li class="rest__item"><b>Бассейн</b></li>
+                  <li class="rest__item"><b>Спортивная площадка</b></li>
+                  <li class="rest__item"><b>Бильярд</b></li>
+                  <li class="rest__item"><b>СПА</b></li>
+                  <li class="rest__item"><b>Бани</b></li>
+                  <li class="rest__item"><b>Анимация</b></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    
+  </section>
+
+  <section class="gallery">
+    <div class="gallery__inner container">
+        <img src="img/gallery-bedroom.jpg" alt="" class="gallery__active-img">
+      <div class="gallery__wrapper hidden-xs">
+        <ul class="gallery-list">
+          <li class="gallery__item"><img src="http://placehold.it/196x115" alt=""></li>
+          <li class="gallery__item"><img src="http://placehold.it/196x115" alt=""></li>
+          <li class="gallery__item"><img src="http://placehold.it/196x115" alt=""></li>
+          <li class="gallery__item"><img src="http://placehold.it/196x115" alt=""></li>
+          <li class="gallery__item"><img src="http://placehold.it/196x115" alt=""></li>
+          <li class="gallery__item"><img src="http://placehold.it/196x115" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="comments text-center">
+
+  <h1>Отзывы</h1>
+
+    <div class="comments__wrapper container">
+
+      <div class="row">
+
+        <div class="col-md-5 col-sm-8">
+          <blockqoute class="comments__item">
+            <b>Екатерина В.</b>
+            <a class="comment__link" href=""></a>
+            <p>Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!</p>
+            <span>Дата отдыха:<br> 01.06.2015 - 08.06.2015</span>
+          </blockqoute>
+        </div>
+        
+        <div class="col-md-5 col-sm-8">
+          <blockqoute class="comments__item">
+            <b>Екатерина В.</b>
+            <a class="comment__link" href=""></a>
+            <p>Спасибо всем без исключения сотрудникам отеля за прекрасные дни, проведённые у вас! Наслаждались тишиной, отдохнули прекрасно. Понравилось всё: тёплый приём персоналом.</p>
+            <span>Дата отдыха:<br> 15.05.2015 - 20.05.2015</span>
+          </blockqoute>
+
+        </div>
+
+      </div>
+
+    </div>
+
+      <a href="" class="comments__btn">Все отзывы</a>
+
+
+  </section>
+
+  <section class="sale">
+
+   <h1>Акции и предложения</h1>
+
+    <div class="sale__wrapper container">
+
+          <div class="sale__info">
+            <h2>Скидки в мае</h2>
+            <p>Забронируйте номер или коттедж любой категории до 31 июня и получите<br>
+            скидку 10% !</p>
+          </div>
+    </div>
+
+    <div class="sale__pagginator"></div>
+
+  </section>
+
+
+  <section class="our-location">
+
+    <div class="our-location__wrapper container">
+      <h1>Как до нас добраться</h1>
+
+      <div class="location__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7274.873609713177!2d29.643292872022794!3d60.19187970911879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x469634073e7fb773%3A0x66e88cf160c76409!2z0JzQtdGC0YDQviDQp9GR0YDQvdCw0Y8g0YDQtdGH0LrQsCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCz0L7RgNC-0LQg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!3m2!1d59.986804!2d30.304203299999998!4m5!1s0x469655a8f7aaa509%3A0x4571dd0a1f950e95!2z0J_RgNC40LzQvtGA0YHQutC-0LUg0YguLCA2MDAsINCzLiDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk5MDA0!3m2!1d60.192102899999995!2d29.6403157!5e0!3m2!1sru!2sru!4v1447705091967" width="1180" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-5 col-sm-12">
+          <div class="location-bus">
+            <h2>Автобусы</h2>
+            <ul class="location-bus__list">
+              <li><span>№ 211</span> от станции метро «Черная речка» до остановки «Санаторий Репино»</li>
+              <li><span>№ 305К</span> от станции метро «Старая деревня»</li>
+              <li><span>№ 680К</span> от станции метро «Проспект Просвещения»</li>
+              <li><span>№ 400К</span> от станции метро «Площадь Ленина»</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-sm-12">
+          <div class="location-train">
+          <h2>Электропоезд</h2>
+            <ul class="location-train__list">
+              <li>Электропоезд Выборгского направления
+              от Финляндского вокзала Санкт-Петербурга
+              до платформы «Репино»</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="wish">
+
+    <div class="wish__inner container">
+      <h1>Где вы хотите отдохнуть?</h1>
+      
+      <div class="row">
+      
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+          <a href=""><img src="img/wish-hotel.jpg" height="199" width="379" alt="">
+            <p class="wish__house--title">в отеле</p>
+            <p class="wish__house--price">от <b>4000</b>тр</p>
+          </a>
+        </div>
+        
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+          <a href=""><img src="img/wish-cattage.jpg" height="199" width="378" alt="">
+            <p class="wish__house--title">в коттедже</p>
+            <p class="wish__house--price">от <b>6800</b>тр</p>
+          </a>
+        </div>
+      
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-4 hidden-xs">
+          <div class="adress-street">
+            <span>г. Санкт-петербург Приморское ш.600</span>
+          </div>
+        </div>
+        
+        <div class="col-sm-4 col-xs-12">
+          <div class="social-link">
+            <a href="" class="logo"></a>
+            <ul class="social-network">
+              <li class="social-network__item vk"><a href="">Вконтакте</a></li>
+              <li class="social-network__item inst"><a href="">Instagram</a></li>
+              <li class="social-network__item fb"><a href="">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-sm-4 hidden-xs">
+          <div class="fast-adress">
+            <span class="fast-adress__phone">+7 812 777-55-88</span>
+            <span class="fast-adress__email">info@greenvallay.ru</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+</body>
+</html>

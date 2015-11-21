@@ -1,0 +1,48 @@
+.promo-slider{
+
+  &__slide{
+    background-image: url(../img/bg-promo-slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__text{
+    padding: 70px 0px 165px;
+  }
+
+  &__paginator{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 55px;
+
+        li{
+          list-style: none;
+          margin: 0px 17px;
+        }
+
+        a{
+          text-decoration: none;
+          color: #838383;
+          text-transform: uppercase;
+          display: inline-block;
+          position: relative;
+        }
+
+        a:hover{
+          color: @btn-default-bg;
+        }
+
+        a:hover:after{
+          width: 30px;
+          height: 2px;
+          background-color: @btn-default-bg;
+          position: absolute;
+          content: '';
+          left: 50%;
+          transform: translateX(-50%);
+          top: 22px;
+        }
+  }
+}
